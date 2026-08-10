@@ -34,7 +34,7 @@ def root():
 def search_manual(question: str) -> str | None:
     """質問に関係する項目をmanual.txtから検索する。"""
 
-    keyword_group = {
+    keyword_groups = {
         "現金会計": ["現金","お釣り","お札","小銭","現金払い"],
         "クレジットカード決済": [
             "クレジット",
