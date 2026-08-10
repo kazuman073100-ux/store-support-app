@@ -55,7 +55,7 @@ def search_manual(question: str) -> str | None:
                     return section
 
     return None
-@app.post("/ask")
+@app.post("/api/ask")
 def ask_question(data: QuestionRequest):
    
     response = client.responses.create(
